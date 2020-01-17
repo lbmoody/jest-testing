@@ -1,0 +1,30 @@
+{
+    "name": "jest-testing",
+    "version": "1.0.0",
+    "description": "node cli app that uses inquirer to generate a team profile and utilizes jest for testing",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "scripts": {
+        "test": "jest --verbose test/*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lbmoody/jest-testing.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lbmoody/jest-testing/issues"
+    },
+    "homepage": "https://github.com/lbmoody/jest-testing#readme",
+    "dependencies": {
+        "inquirer": "^6.3.1"
+    },
+    "devDependencies": {
+        "jest": "^24.8.0"
+    }
+}
