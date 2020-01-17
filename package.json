@@ -2,10 +2,10 @@
     "name": "jest-testing",
     "version": "1.0.0",
     "description": "node cli app that uses inquirer to generate a team profile and utilizes jest for testing",
-    "main": "index.js",
+    "main": "app.js",
     "directories": {
         "lib": "lib",
-        "test": "test"
+        "test": "jest"
     },
     "scripts": {
         "test": "jest --verbose test/*"
