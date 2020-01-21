@@ -56,7 +56,7 @@ class teamBuilder {
                    , name: "managerEmail"
                 },
             ]).then(res => {
-                const manager = new Manager(res.managerID, res.managerName, res.managerEmail, res.managerPhone);
+                const manager = new Manager(res.managerName, res.managerID, res.managerEmail, res.managerPhone);
                 team.push(manager);
                 this.createTeam();
             });
@@ -79,7 +79,9 @@ class teamBuilder {
                 } else {
                     console.log(`Team Members: ${JSON.stringify(team)}`);
                     render(team);
-                    createTeamHTML(html);
+                    fs.writeFile(outputPath, render(team), err => {
+                        if (err) throw err;
+                    })
 
                 }
             });
@@ -109,7 +111,7 @@ class teamBuilder {
                     , name: "engineerEmail"
                 },
             ]).then(res => {
-                const engineer = new Engineer(res.engineerID, res.engineerName, res.engineerEmail, res.engineerPhone);
+                const engineer = new Engineer(res.engineerName, res.engineerID, res.engineerEmail, res.engineerPhone);
                 team.push(engineer);
                 this.createTeam();
             });
@@ -139,15 +141,13 @@ class teamBuilder {
                     , name: "internEmail"
                 },
             ]).then(res => {
-                const intern = new Intern(res.internID, res.internName, res.internEmail, res.internSchool);
+                const intern = new Intern(res.internName, res.internID, res.internEmail, res.internSchool);
                 team.push(intern);
                 this.createTeam();
             });
     }
 
-    async createTeamHTML(html) {
-        await writeFileAsync(outputPath, html);
-    };
+
 }
 
 const appStart = new teamBuilder();
