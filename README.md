@@ -14,3 +14,8 @@ Inquirer will ask unique questions for each employee type. Office phone for the 
 Here is a snapshot of the sample html template that was generated through the application.
 
 ![image](https://user-images.githubusercontent.com/24512590/72867570-9f18f880-3c9c-11ea-8e4b-3d6a404d2b47.png)
+
+## testing
+This application also utilizes jest for testing. There are tests created to ensure the class are created correctly. Creating these tests before coding the project help to ensure that the usage of the classes and functions in the application came together correctly. To run the test type `npm test` into the cli. This will perform the tests through the jest package.
+
+![image](https://user-images.githubusercontent.com/24512590/72867985-e2279b80-3c9d-11ea-8d6c-f60f53e03ebd.png)
