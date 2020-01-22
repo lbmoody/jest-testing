@@ -12,4 +12,5 @@ Inquirer will ask unique questions for each employee type. Office phone for the 
 ![app-walkthrough](./gifs/managerCreation.gif)
 
 Here is a snapshot of the sample html template that was generated through the application.
-![image](https://user-images.githubusercontent.com/24512590/72866757-bbfffc80-3c99-11ea-8c68-4e44cebb4c34.png)
+
+![image](https://user-images.githubusercontent.com/24512590/72867570-9f18f880-3c9c-11ea-8e4b-3d6a404d2b47.png)
